@@ -4,28 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Venture Games: One-Page Pitches</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  body { margin: 0; padding: 48px 24px; background: #fff; color: #111;
-         font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-  main { max-width: 780px; margin: 0 auto; }
-  h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
-  p.sub { margin: 0 0 32px; color: #666; font-size: 14px; }
-  .row { display: grid; grid-template-columns: 120px 1fr 90px; gap: 0 14px; padding: 12px 0; border-top: 1px solid #e5e5e5; }
-  .t { font-weight: 600; }
-  .m { color: #666; text-align: right; white-space: nowrap; }
-  .d { color: #333; }
-  a { color: #111; text-decoration: underline; text-underline-offset: 3px; }
-  a:hover { color: #555; }
-  details { grid-column: 2 / 4; margin-top: 8px; }
-  summary { cursor: pointer; color: #444; font-size: 14px; }
-  .group { margin: 10px 0 0 2px; }
-  .group b { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: #777; margin-bottom: 4px; }
-  ul { margin: 0; padding-left: 18px; font-size: 14px; }
-  li { margin: 4px 0; }
-  .latest { font-size: 11px; border: 1px solid #111; border-radius: 999px; padding: 1px 7px; margin-left: 6px; }
-  .note { color: #888; font-size: 12px; margin-top: 28px; }
-  footer { margin-top: 12px; color: #999; font-size: 12px; }
-  @media (max-width: 560px) { .row { grid-template-columns: 1fr; } .m { text-align: left; } details { grid-column: 1; } }
+  *{box-sizing:border-box;min-width:0}
+  body{margin:0;padding:48px 24px;background:#fff;color:#0A0A0A;font:15px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  main{max-width:760px;margin:0 auto}
+  h1{font-size:24px;font-weight:700;letter-spacing:-.02em;margin:0}
+  .sub{margin:4px 0 32px;color:#6B6B6B;font-size:14px}
+  .game{display:grid;grid-template-columns:120px minmax(0,1fr) auto;gap:4px 24px;padding:16px 0;border-top:1px solid #E2E2E2}
+  .name a{font-weight:600;font-size:16px}
+  .desc{color:#333}
+  .date{color:#6B6B6B;font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap;padding-top:2px}
+  a{color:#0A0A0A;text-decoration:none}
+  a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+  .name a::after{content:" →";color:#9A9A9A;font-weight:400}
+  details{grid-column:2/4;margin-top:8px}
+  summary{cursor:pointer;list-style:none;color:#6B6B6B;font-size:13px}
+  summary::-webkit-details-marker{display:none}
+  summary .c{display:none}
+  details[open] summary .o{display:none}
+  details[open] summary .c{display:inline}
+  .grp{margin:12px 0 2px;font-size:11px;font-weight:600;color:#9A9A9A}
+  .v{display:grid;grid-template-columns:24px 76px minmax(0,1fr);gap:8px;padding:3px 0;font-size:13px;line-height:1.45}
+  .v b{font-weight:600}
+  .v .d{color:#6B6B6B;font-variant-numeric:tabular-nums}
+  .v i{font-style:normal;color:#9A9A9A;font-size:11px;margin-left:8px}
+  .note{color:#8A8A8A;font-size:12px;margin-top:32px}
+  @media (max-width:560px){.game{grid-template-columns:1fr}.date{padding:0}details{grid-column:1}}
 </style>
 </head>
 <body>
@@ -33,33 +40,33 @@
   <h1>Venture Games</h1>
   <p class="sub">One-page pitches of browser game prototypes</p>
 
-  <div class="row">
-    <div class="t"><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v5/">Laura</a></div>
-    <div class="d">A duet of opposites: a heavy bear and a light ballerina must reach the dark lighthouse together and light it. One-page design with a playable browser prototype.</div>
-    <div class="m">11.2026</div>
+  <div class="game">
+    <div class="name"><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v5/">Laura</a></div>
+    <div class="desc">A duet of opposites: a heavy bear and a light ballerina must reach the dark lighthouse together and light it.</div>
+    <div class="date">11.2026</div>
     <details>
-      <summary>All versions</summary>
-      <div class="group">
-        <b>Lana Branch</b>
-        <ul>
-          <li><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v5/">v5, 22.11.2026: game intro with the goal; the intro is the hook; clearer second screen</a><span class="latest">latest</span></li>
-          <li><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v4/">v4, 22.11.2026: one-page design on one screen; reach the lighthouse together, no circles</a></li>
-          <li><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v3/">v3, 22.11.2026: shorter one-page design, base game, test mode, autopilot on P</a></li>
-          <li><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v2/">v2, 22.11.2026: one-page design with teaser and game, hints, key panel, EN and RU, level celebration</a></li>
-          <li>v1, 22.11.2026: <a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/play.html">playtest build</a> and <a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/one-page-design.html">one-page design</a></li>
-        </ul>
-      </div>
-      <div class="group">
-        <b>Base</b>
-        <ul>
-          <li><a href="https://lanasvitla.github.io/venture-games-pitch/">v0, 21.11.2026: first one-pager</a></li>
-        </ul>
-      </div>
+      <summary><span class="o">All versions +</span><span class="c">Close −</span></summary>
+      <div class="grp">Lana Branch</div>
+      <div class="v"><b>v5</b><span class="d">22.11.2026</span><span><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v5/">Intro with the goal</a><i>latest</i></span></div>
+      <div class="v"><b>v4</b><span class="d">22.11.2026</span><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v4/">One screen, no circles</a></div>
+      <div class="v"><b>v3</b><span class="d">22.11.2026</span><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v3/">Base game and test mode</a></div>
+      <div class="v"><b>v2</b><span class="d">22.11.2026</span><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/v2/">Teaser, hints, EN and RU</a></div>
+      <div class="v"><b>v1</b><span class="d">22.11.2026</span><span><a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/one-page-design.html">One-page design</a>, <a href="https://lanasvitla.github.io/venture-games-pitch/preview/lana-branch/play.html">playtest build</a></span></div>
+      <div class="grp">Base</div>
+      <div class="v"><b>v0</b><span class="d">21.11.2026</span><a href="https://lanasvitla.github.io/venture-games-pitch/">First one-pager</a></div>
     </details>
   </div>
 
-  <p class="note">Pitch pages are password protected.</p>
-  <footer>&copy; 2026 Venture Games</footer>
+  <p class="note">Pitch pages are password protected. A shared link with a key opens them directly.</p>
 </main>
+<script>
+{
+  // ключ приходит только в ссылке (#k=...), в коде его нет: передаем его закрытым страницам
+  const m = location.hash.match(/k=([^&]+)/);
+  let k = m ? decodeURIComponent(m[1]) : null;
+  try { if (k) sessionStorage.setItem('vgk', k); else k = sessionStorage.getItem('vgk'); } catch (e) {}
+  if (k) document.querySelectorAll('a[href*="/venture-games-pitch/"]').forEach(a => { a.href = a.href.split('#')[0] + '#k=' + encodeURIComponent(k); });
+}
+</script>
 </body>
 </html>
