@@ -64,7 +64,7 @@
   // ключ приходит только в ссылке (#k=...), в коде его нет: передаем его закрытым страницам
   const m = location.hash.match(/k=([^&]+)/);
   let k = m ? decodeURIComponent(m[1]) : null;
-  try { if (k) sessionStorage.setItem('vgk', k); else k = sessionStorage.getItem('vgk'); } catch (e) {}
+  try { if (k) { sessionStorage.setItem('vgk', k); localStorage.setItem('vgk', k); } else k = sessionStorage.getItem('vgk') || localStorage.getItem('vgk'); } catch (e) {}
   if (k) document.querySelectorAll('a[href*="/venture-games-pitch/"]').forEach(a => { a.href = a.href.split('#')[0] + '#k=' + encodeURIComponent(k); });
 }
 </script>
